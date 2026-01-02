@@ -91,6 +91,9 @@ export const metadata = {
     // google: 'google-site-verification-code',
     // yandex: 'yandex-verification-code',
   },
+  other: {
+    'facebook-domain-verification': 'wfugv2kt2cexhjdshajdhme217ivvu',
+  },
 };
 
 export default function RootLayout({ children }) {
