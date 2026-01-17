@@ -164,7 +164,7 @@ export default function Home() {
             <p className="mt-6 max-w-2xl mx-auto text-xl sm:text-2xl text-gray-600">
               Track expenses, analyze spending patterns, and achieve your financial goals with our intuitive expense management platform.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mt-10 flex justify-center">
               <a
                 href={process.env.NEXT_PUBLIC_EXPENSE_MANAGER_APP_URL || "http://localhost:5173"}
                 target="_blank"
@@ -174,15 +174,21 @@ export default function Home() {
               >
                 Get Started Free
               </a>
-              <a
-                href={process.env.NEXT_PUBLIC_EXPENSE_MANAGER_APP_URL || "http://localhost:5173"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-3 border-2 border-gray-900 text-base font-medium rounded-lg text-gray-900 hover:bg-gray-100 transition-colors duration-200"
-                aria-label="View live demo of Expenser"
-              >
-                View Demo
-              </a>
+            </div>
+
+            {/* Demo Video */}
+            <div className="mt-12 max-w-4xl mx-auto">
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded-xl shadow-2xl"
+                  src="https://www.youtube.com/embed/Ux_ywSn4ZJo?si=iRZSOqo5fNKDvaOc"
+                  title="Expenser Demo - Complete Tutorial"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
             </div>
 
             {/* Stats */}
